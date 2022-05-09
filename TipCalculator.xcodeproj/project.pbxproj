@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EC642CA128168BF8008DFE94 /* TipCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CA028168BF8008DFE94 /* TipCalculatorApp.swift */; };
-		EC642CA328168BF8008DFE94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CA228168BF8008DFE94 /* ContentView.swift */; };
 		EC642CA528168BFA008DFE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC642CA428168BFA008DFE94 /* Assets.xcassets */; };
 		EC642CA828168BFA008DFE94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC642CA728168BFA008DFE94 /* Preview Assets.xcassets */; };
 		EC642CAA28168BFA008DFE94 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CA928168BFA008DFE94 /* Persistence.swift */; };
@@ -16,6 +15,10 @@
 		EC642CB728168BFA008DFE94 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CB628168BFA008DFE94 /* TipCalculatorTests.swift */; };
 		EC642CC128168BFA008DFE94 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CC028168BFA008DFE94 /* TipCalculatorUITests.swift */; };
 		EC642CC328168BFA008DFE94 /* TipCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CC228168BFA008DFE94 /* TipCalculatorUITestsLaunchTests.swift */; };
+		EC642CD228168CB0008DFE94 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CD128168CB0008DFE94 /* CardView.swift */; };
+		EC642CD428168D4E008DFE94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CD328168D4E008DFE94 /* ContentView.swift */; };
+		EC642CD628169C04008DFE94 /* GuestCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC642CD528169C04008DFE94 /* GuestCountView.swift */; };
+		ECF47C91282295B5004620C0 /* CTScanText in Frameworks */ = {isa = PBXBuildFile; productRef = ECF47C90282295B5004620C0 /* CTScanText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		EC642C9D28168BF8008DFE94 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC642CA028168BF8008DFE94 /* TipCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorApp.swift; sourceTree = "<group>"; };
-		EC642CA228168BF8008DFE94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC642CA428168BFA008DFE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC642CA728168BFA008DFE94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC642CA928168BFA008DFE94 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,9 @@
 		EC642CBC28168BFA008DFE94 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC642CC028168BFA008DFE94 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		EC642CC228168BFA008DFE94 /* TipCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC642CD128168CB0008DFE94 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EC642CD328168D4E008DFE94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC642CD528169C04008DFE94 /* GuestCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF47C91282295B5004620C0 /* CTScanText in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +104,9 @@
 		EC642C9F28168BF8008DFE94 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				EC642CD7281A47E9008DFE94 /* view */,
 				EC642CA028168BF8008DFE94 /* TipCalculatorApp.swift */,
-				EC642CA228168BF8008DFE94 /* ContentView.swift */,
+				EC642CD328168D4E008DFE94 /* ContentView.swift */,
 				EC642CA428168BFA008DFE94 /* Assets.xcassets */,
 				EC642CA928168BFA008DFE94 /* Persistence.swift */,
 				EC642CAB28168BFA008DFE94 /* TipCalculator.xcdatamodeld */,
@@ -133,6 +140,15 @@
 			path = TipCalculatorUITests;
 			sourceTree = "<group>";
 		};
+		EC642CD7281A47E9008DFE94 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EC642CD128168CB0008DFE94 /* CardView.swift */,
+				EC642CD528169C04008DFE94 /* GuestCountView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +165,9 @@
 			dependencies = (
 			);
 			name = TipCalculator;
+			packageProductDependencies = (
+				ECF47C90282295B5004620C0 /* CTScanText */,
+			);
 			productName = TipCalculator;
 			productReference = EC642C9D28168BF8008DFE94 /* TipCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +240,9 @@
 				Base,
 			);
 			mainGroup = EC642C9428168BF7008DFE94;
+			packageReferences = (
+				ECF47C8F282295B5004620C0 /* XCRemoteSwiftPackageReference "CTScanText" */,
+			);
 			productRefGroup = EC642C9E28168BF8008DFE94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,8 +287,10 @@
 			files = (
 				EC642CAA28168BFA008DFE94 /* Persistence.swift in Sources */,
 				EC642CAD28168BFA008DFE94 /* TipCalculator.xcdatamodeld in Sources */,
-				EC642CA328168BF8008DFE94 /* ContentView.swift in Sources */,
+				EC642CD428168D4E008DFE94 /* ContentView.swift in Sources */,
+				EC642CD628169C04008DFE94 /* GuestCountView.swift in Sources */,
 				EC642CA128168BF8008DFE94 /* TipCalculatorApp.swift in Sources */,
+				EC642CD228168CB0008DFE94 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECF47C8F282295B5004620C0 /* XCRemoteSwiftPackageReference "CTScanText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StewartLynch/CTScanText";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECF47C90282295B5004620C0 /* CTScanText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF47C8F282295B5004620C0 /* XCRemoteSwiftPackageReference "CTScanText" */;
+			productName = CTScanText;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EC642CAB28168BFA008DFE94 /* TipCalculator.xcdatamodeld */ = {
