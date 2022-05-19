@@ -21,12 +21,14 @@ struct CardView: View {
             Text(cardLabelText)
                 .foregroundColor(.cyan)
                 .fontWeight(.black)
-            
+                .accessibilityLabel("Description writing. As an explanation for what will appear in the box below this article")
+            Spacer()
             ZStack {
                 Rectangle()
                     .foregroundColor(.gray)
                     .cornerRadius(15)
                     .opacity(0.75)
+                    
                 
                 HStack{
                     Spacer()
@@ -34,6 +36,7 @@ struct CardView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 30, weight: .black, design: .monospaced))
                         .fontWeight(.black)
+                    
                     
                     Spacer()
                     
@@ -48,6 +51,7 @@ struct CardView: View {
                             Text("SUBTOTAL")
                                 .font(.system(.caption, design: .rounded))
                                 .fontWeight(.light)
+                                .accessibilityLabel("Sub-Total. To see the subtotal of the tip calculation that will be given.")
                             Text("Rp\(subtotal)")
                                 .font(.system(.body, design: .monospaced))
                                 .fontWeight(.black)
@@ -57,6 +61,7 @@ struct CardView: View {
                             Text("TIP")
                                 .font(.system(.caption, design: .rounded))
                                 .fontWeight(.light)
+                                .accessibilityLabel("Tip writing. To see a tip from the calculation of the tip that will be given.")
                             Text("Rp\(tip)")
                                 .font(.system(.body, design: .monospaced))
                                 .fontWeight(.black)
@@ -76,7 +81,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(cardLabelText: "PER ORANG")
+        CardView(cardLabelText: "Per Person")
             .frame(width: 300, height: 150)
     }
 }

@@ -22,6 +22,10 @@ struct GuestCountView: View {
                 Image(systemName: "minus.circle")
                     .foregroundColor(.cyan)
                     .font(.system(.title, design: .rounded))
+                    .padding(10)
+                    .accessibilityLabel("Minus button. To reduce the number of waiters who will be tipped")
+                    
+                    
             }
             
             Text("\(guestCount)")
@@ -30,10 +34,13 @@ struct GuestCountView: View {
             
             Button{
                 guestCount += 1
+                
             }label: {
                 Image(systemName: "plus.circle")
                     .foregroundColor(.cyan)
                     .font(.system(.title, design: .rounded))
+                    .padding(10)
+                    .accessibilityLabel("More button. To increase the number of waiters who will be given a tip")
             }
         }
         
